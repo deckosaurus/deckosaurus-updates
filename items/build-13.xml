@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<item xmlns:deck="https://updates.deckosaurus.com/ns" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <title>Deckosaurus 0.2.12</title>
+  <sparkle:version>13</sparkle:version>
+  <sparkle:shortVersionString>0.2.12</sparkle:shortVersionString>
+  <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+  <sparkle:channel>canary</sparkle:channel>
+  <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.2.12-13.html</sparkle:releaseNotesLink>
+  <deck:entered channel="canary" date="2026-09-23" />
+  <description>&lt;h1&gt;Deckosaurus 0.2.12&lt;/h1&gt;
+&lt;h2&gt;About knows your channel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;**About** now shows which release channel you are subscribed to and what the update feed says about the build you are running — for example "0.2.12 (13) is on canary since 23 Sep" — with a link to these release notes.&lt;/li&gt;
+&lt;li&gt;**Preferences ▸ Updates** carries the same line under "Last checked", so "You're up to date" is never ambiguous again.&lt;/li&gt;
+&lt;li&gt;A build that is not in the feed, an unreachable feed, or a local development build each say so plainly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Smaller things&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Every release now ships with notes; the update dialog will no longer be blank.&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.2.12-13.zip" length="13529113" type="application/octet-stream" sparkle:edSignature="DFFd4QOlbH+ZJ1s321ViwWknBkp6vYd3+JcWMG/heJFYgWv9MJrNFpGT14nwA4VC+QZgbUR0BQ2MIltsR2l4Ag==" />
+</item>
