@@ -6,6 +6,30 @@
     <description>Updates for Deckosaurus.</description>
     <language>en</language>
     <item>
+      <title>Deckosaurus 0.3.0</title>
+      <sparkle:version>20</sparkle:version>
+      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <sparkle:channel>canary</sparkle:channel>
+      <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.0-20.html</sparkle:releaseNotesLink>
+      <deck:entered channel="canary" date="2026-09-23" />
+      <description>&lt;h1&gt;Deckosaurus 0.3.0&lt;/h1&gt;
+&lt;h2&gt;A second coding agent: OpenRouter&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OpenRouter&lt;/strong&gt; joins Claude Code. One API key, almost any model — enter it in Preferences ▸ Coding Agents ▸ OpenRouter and press &lt;em&gt;Check connection&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Browse all models&lt;/strong&gt; in their own window: search, filter by free/tools/vision/reasoning/context length, sort, star the ones you use, and read each model's limits before you pick it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose the agent per workspace&lt;/strong&gt; — in New Workspace, or later in the workspace's settings — and, for OpenRouter, the model too. The chat header shows what is running and lets you switch.&lt;/li&gt;
+&lt;li&gt;Your OpenRouter key is stored only in your login Keychain. The app never logs it and never sends it anywhere but OpenRouter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Also in this release&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Development builds are badged with their instance so they can never be mistaken for the installed app, and each keeps its own data.&lt;/li&gt;
+&lt;li&gt;About has a copy button for the version line — handy for bug reports.&lt;/li&gt;
+&lt;li&gt;New Workspace's Options group is a plain section; the Search sidebar says how many files matched; release notes render emphasis correctly.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.3.0-20.zip" length="13980512" type="application/octet-stream" sparkle:edSignature="CPo4BQcJXECYJ1XeikdMcI8IPC2ydfTY+mlSGJAGnBlx50dTpRyRB9TSWefaFNygiQrlasov078phzV8MoSTAQ==" />
+    </item>
+    <item>
       <title>Deckosaurus 0.2.12</title>
       <sparkle:version>13</sparkle:version>
       <sparkle:shortVersionString>0.2.12</sparkle:shortVersionString>
