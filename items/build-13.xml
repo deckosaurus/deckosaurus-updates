@@ -10,8 +10,8 @@
   <description>&lt;h1&gt;Deckosaurus 0.2.12&lt;/h1&gt;
 &lt;h2&gt;About knows your channel&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;**About** now shows which release channel you are subscribed to and what the update feed says about the build you are running — for example "0.2.12 (13) is on canary since 23 Sep" — with a link to these release notes.&lt;/li&gt;
-&lt;li&gt;**Preferences ▸ Updates** carries the same line under "Last checked", so "You're up to date" is never ambiguous again.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;About&lt;/strong&gt; now shows which release channel you are subscribed to and what the update feed says about the build you are running — for example "0.2.12 (13) is on canary since 23 Sep" — with a link to these release notes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preferences ▸ Updates&lt;/strong&gt; carries the same line under "Last checked", so "You're up to date" is never ambiguous again.&lt;/li&gt;
 &lt;li&gt;A build that is not in the feed, an unreachable feed, or a local development build each say so plainly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Smaller things&lt;/h2&gt;
