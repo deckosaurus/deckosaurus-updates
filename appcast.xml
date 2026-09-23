@@ -10,7 +10,6 @@
       <sparkle:version>8</sparkle:version>
       <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <sparkle:channel>beta</sparkle:channel>
       <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.2.7-8.zip" length="13508145" type="application/octet-stream" sparkle:edSignature="ayXaeo/37RfnsL1yEpK/Jwlx/nWmyF1L3BlzNELCImCt8JftjjwYTpoy+sztw+QL7JH/J2DIThyPJjpG2b88Dg==" />
     </item>
     <item>
