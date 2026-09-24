@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<item xmlns:deck="https://updates.deckosaurus.com/ns" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <title>Deckosaurus 0.3.5</title>
+  <sparkle:version>24</sparkle:version>
+  <sparkle:shortVersionString>0.3.5</sparkle:shortVersionString>
+  <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+  <sparkle:channel>canary</sparkle:channel>
+  <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.5-24.html</sparkle:releaseNotesLink>
+  <deck:entered channel="canary" date="2026-09-24" />
+  <description>&lt;h2&gt;Deckosaurus 0.3.5&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Anonymous usage statistics, on by default, off in one click.&lt;/strong&gt; Deckosaurus now sends three small signals — that it launched (version, channel, macOS version, processor), that an update check ran, and that an update installed — with a random install id and nothing else. No names, paths or content, ever, and the address a request comes from is never kept. The first launch shows a one-line notice before anything is sent.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Preferences ▸ Updates&lt;/strong&gt; has the "Share anonymous usage statistics" switch and a link to the privacy policy; turning it off deletes the install id.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;About&lt;/strong&gt; links the privacy policy beside the release notes.&lt;/li&gt;
+&lt;li&gt;The policy itself: https://updates.deckosaurus.com/privacy.html — questions to privacy@deckosaurus.com.&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.3.5-24.zip" length="14033219" type="application/octet-stream" sparkle:edSignature="Q4CWRkn898D+7iAfsJYP3m8FolKG4aPSzMK2cXexOy7bfW+FQDEbY1j5ZqFjQyvlANr9rGlaH0bzocyyz1ZJCg==" />
+</item>
