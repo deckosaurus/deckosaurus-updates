@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<item xmlns:deck="https://updates.deckosaurus.com/ns" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <title>Deckosaurus 0.3.2</title>
+  <sparkle:version>21</sparkle:version>
+  <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+  <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+  <sparkle:channel>canary</sparkle:channel>
+  <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.2-21.html</sparkle:releaseNotesLink>
+  <deck:entered channel="canary" date="2026-09-24" />
+  <description>&lt;h2&gt;Deckosaurus 0.3.2&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Fixes the launch crash in 0.3.0.&lt;/strong&gt; Installed on any Mac other than the one that built it, 0.3.0 died a few seconds after launch while loading its bundled resources. 0.3.2 loads them from where they actually live in the app bundle, and the release checks now fail any build that could repeat this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brand glyphs and the terminal's shell integration resolve from the app bundle on every Mac.&lt;/li&gt;
+&lt;li&gt;The terminal library (GhosttyTerminalKit 0.1.8) carries the same fix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Everything from 0.3.0 is unchanged: OpenRouter as the second coding agent, the model browser, and the About box's channel and release-notes links.&lt;/p&gt;</description>
+  <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.3.2-21.zip" length="13982820" type="application/octet-stream" sparkle:edSignature="lb4oLZSfRa6/Rds3Q9cnu30rEOCw/yxlurx2eImgYnQlpUBHQuFo4XjT2ayaLhl5vEyTxxQM0PgLlkDaTRGkBQ==" />
+</item>
