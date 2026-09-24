@@ -1,0 +1,18 @@
+# Deckosaurus telemetry — feature 567 Phase 1.
+# One Worker, one Analytics Engine dataset, no server, free tier.
+# Deploy from a Mac with a `wrangler login` session:  wrangler deploy --config worker/wrangler.toml
+name = "deckosaurus-telemetry"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+
+routes = [
+  { pattern = "telemetry.deckosaurus.com", custom_domain = true },
+]
+
+[[analytics_engine_datasets]]
+binding = "TELEMETRY"
+dataset = "deckosaurus_telemetry"
+
+[observability]
+enabled = false
