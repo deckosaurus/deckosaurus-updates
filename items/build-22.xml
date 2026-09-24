@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<item xmlns:deck="https://updates.deckosaurus.com/ns" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <title>Deckosaurus 0.3.3</title>
+  <sparkle:version>22</sparkle:version>
+  <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
+  <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+  <sparkle:channel>canary</sparkle:channel>
+  <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.3-22.html</sparkle:releaseNotesLink>
+  <deck:entered channel="canary" date="2026-09-24" />
+  <description>&lt;h2&gt;Deckosaurus 0.3.3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Moving a workspace to another board window no longer crashes the app.&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.3.3-22.zip" length="13983516" type="application/octet-stream" sparkle:edSignature="ICbHUXzmB038XwxxAUVMxNxwv8qSniMRxrGttOduSKPBXooEfJYChpKkgAvyTdkJ2ixOYx0jQKIgytsrHHcGBQ==" />
+</item>
