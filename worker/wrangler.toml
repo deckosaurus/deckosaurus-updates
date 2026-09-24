@@ -27,7 +27,7 @@ crons = ["0 2 * * *"]
 # (feature 573's plan) — the owner flips this to "1" once the service token
 # exists. Also used as the on-demand-rollup gate when the X-Rollup-Key header
 # isn't sent.
-QUERY_ENABLED = "0"
+QUERY_ENABLED = "1"
 
 [observability]
 enabled = false
