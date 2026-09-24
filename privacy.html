@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Deckosaurus Privacy Policy</title>
+<style>
+  body { font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+          max-width: 640px; margin: 48px auto; padding: 0 24px; color: #1d1d1f; }
+  h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
+  code { background: #f2f2f2; padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.9em; }
+  pre { background: #f2f2f2; padding: 12px 16px; border-radius: 8px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+<h1>Deckosaurus privacy policy</h1>
+<p><em>Last updated 2026-09-24.</em></p>
+<p>Deckosaurus sends a small amount of anonymous usage telemetry, on by default, that you can turn off at any time. This page says exactly what is sent, when, and how to stop it.</p>
+<h2>What is sent</h2>
+<p>Three events, each with a fixed, small set of fields — nothing beyond what is listed here:</p>
+<ul>
+<li><strong><code>launch</code></strong> — sent once per app launch: the app version, the build number, the update channel (<code>stable</code>, <code>beta</code>, or <code>canary</code>; a developer's local build sends nothing), the macOS version, and the processor type (<code>arm64</code> or <code>x86_64</code>).</li>
+<li><strong><code>update.checked</code></strong> — sent after Sparkle finishes an update check, scheduled or manual: the result (<code>up-to-date</code>, <code>update-found</code>, or <code>error</code>).</li>
+<li><strong><code>update.installed</code></strong> — sent on the first launch after an update installs: the build you upgraded from and the build you upgraded to.</li>
+</ul>
+<p>Every event also carries a random install id and a timestamp. That is the whole shape — there is no free-text field, and no event ever carries a file path, a workspace name, a project name, or anything you have typed.</p>
+<h2>It is anonymous</h2>
+<p>The install id is a random value generated on this Mac, with no connection to your name, your Apple ID, or any other account. We do not retain the IP address a request arrives from — our Worker never reads it, and nothing downstream of it is asked to. There is no way for us to connect an event back to a specific person from the data it carries.</p>
+<h2>How to turn it off</h2>
+<p>Preferences ▸ Updates has a <strong>Share anonymous usage statistics</strong> toggle, on by default. Turning it off stops every future event immediately, and deletes the random install id from this Mac — the next time you turn it back on, a fresh id is created rather than the old one being reused.</p>
+<h2>The update feed and downloads</h2>
+<p>Checking for updates and downloading them both go through <code>updates.deckosaurus.com</code>, which is served through Cloudflare. Cloudflare counts requests to that host as ordinary web traffic and processes them as a content delivery network under <a href="https://www.cloudflare.com/privacypolicy/">its own privacy policy</a>; we see request counts by path and country, never who made them. No account is needed to read or download the app, and this is separate from the usage telemetry described above.</p>
+<h2>Retention</h2>
+<p>Raw telemetry events are kept for 90 days, then deleted. Aggregated counts derived from them (for example, "how many installs checked for an update this week") may be kept longer.</p>
+<h2>Contact</h2>
+<p>Questions about this policy, or a request about your data: <code>dev@datastack.cloud</code>.</p>
+</body>
+</html>
