@@ -126,23 +126,29 @@ async function handleEvent(request, env) {
   return new Response(null, { status: 204 });
 }
 
+// The Worker keeps ONE copy for 5 minutes (cache API, keyed on the bare path so a cache-busting
+// query string from the page still hits it); the CLIENT is told not to cache at all. The zone's
+// Browser Cache TTL otherwise rewrote our max-age=300 to 14400 (measured), and a dashboard that
+// shows four-hour-old numbers is worse than one that waits a second.
+const STATS_TTL_SECONDS = 300;
+const CLIENT_HEADERS = { "content-type": "application/json", "cache-control": "no-store" };
 async function handleStats(request, env, ctx) {
   const cache = caches.default;
-  const cached = await cache.match(request);
-  if (cached) return cached;
-
+  const key = new Request(new URL("/v1/stats", request.url).toString(), { method: "GET" });
+  const cached = await cache.match(key);
+  if (cached) return new Response(cached.body, { status: 200, headers: CLIENT_HEADERS });
   let stats;
   try {
     stats = await buildStats(env);
   } catch (err) {
     return upstreamErrorJson(err);
   }
-  const response = new Response(JSON.stringify(stats), {
+  const body = JSON.stringify(stats);
+  ctx.waitUntil(cache.put(key, new Response(body, {
     status: 200,
-    headers: { "content-type": "application/json", "cache-control": "public, max-age=300" },
-  });
-  ctx.waitUntil(cache.put(request, response.clone()));
-  return response;
+    headers: { "content-type": "application/json", "cache-control": `public, s-maxage=${STATS_TTL_SECONDS}` },
+  })));
+  return new Response(body, { status: 200, headers: CLIENT_HEADERS });
 }
 
 async function handleQuery(request, env) {

@@ -123,7 +123,7 @@ export function renderStatsPage() {
     });
   }
 
-  fetch("/v1/stats").then(function (res) {
+  fetch("/v1/stats?t=" + Date.now(), { cache: "no-store" }).then(function (res) {
     if (!res.ok) throw new Error("stats fetch failed: " + res.status);
     return res.json();
   }).then(function (s) {
