@@ -10,9 +10,10 @@
       <sparkle:version>21</sparkle:version>
       <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <sparkle:channel>canary</sparkle:channel>
+      <sparkle:channel>beta</sparkle:channel>
       <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.2-21.html</sparkle:releaseNotesLink>
       <deck:entered channel="canary" date="2026-09-24" />
+      <deck:promoted channel="beta" date="2026-09-24" />
       <description>&lt;h2&gt;Deckosaurus 0.3.2&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Fixes the launch crash in 0.3.0.&lt;/strong&gt; Installed on any Mac other than the one that built it, 0.3.0 died a few seconds after launch while loading its bundled resources. 0.3.2 loads them from where they actually live in the app bundle, and the release checks now fail any build that could repeat this.&lt;/p&gt;
 &lt;ul&gt;
