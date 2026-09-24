@@ -1,5 +1,5 @@
-# Deckosaurus telemetry — feature 567 Phase 1.
-# One Worker, one Analytics Engine dataset, no server, free tier.
+# Deckosaurus telemetry — feature 567 Phase 1 + feature 573 (dashboard).
+# One Worker, one Analytics Engine dataset, one D1 database, no server, free tier.
 # Deploy from a Mac with a `wrangler login` session:  wrangler deploy --config worker/wrangler.toml
 name = "deckosaurus-telemetry"
 main = "src/index.js"
@@ -14,5 +14,45 @@ routes = [
 binding = "TELEMETRY"
 dataset = "deckosaurus_telemetry"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "deckosaurus-telemetry"
+database_id = "f465bf7f-942d-4ebd-9f4e-e88528f70939"
+
+[triggers]
+crons = ["0 2 * * *"]
+
+[vars]
+# POST /v1/query stays disabled until Cloudflare Access is in front of it
+# (feature 573's plan) — the owner flips this to "1" once the service token
+# exists. Also used as the on-demand-rollup gate when the X-Rollup-Key header
+# isn't sent.
+QUERY_ENABLED = "0"
+
 [observability]
+enabled = false
+
+# Staging: same dataset + D1 binding, a workers.dev URL, no custom domain.
+# `wrangler deploy --config worker/wrangler.toml --env staging`
+[env.staging]
+name = "deckosaurus-telemetry-staging"
+workers_dev = true
+routes = []
+
+[[env.staging.analytics_engine_datasets]]
+binding = "TELEMETRY"
+dataset = "deckosaurus_telemetry"
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "deckosaurus-telemetry"
+database_id = "f465bf7f-942d-4ebd-9f4e-e88528f70939"
+
+[env.staging.triggers]
+crons = []
+
+[env.staging.vars]
+QUERY_ENABLED = "0"
+
+[env.staging.observability]
 enabled = false

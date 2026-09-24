@@ -1,2 +1,4 @@
 .wrangler/
 node_modules/
+.rollup-key.local
+.dev.vars
