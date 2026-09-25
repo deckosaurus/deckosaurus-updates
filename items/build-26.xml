@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<item xmlns:deck="https://updates.deckosaurus.com/ns" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <title>Deckosaurus 0.3.8</title>
+  <sparkle:version>26</sparkle:version>
+  <sparkle:shortVersionString>0.3.8</sparkle:shortVersionString>
+  <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+  <sparkle:channel>canary</sparkle:channel>
+  <sparkle:releaseNotesLink>https://updates.deckosaurus.com/notes/0.3.8-26.html</sparkle:releaseNotesLink>
+  <deck:entered channel="canary" date="2026-09-25" />
+  <description>&lt;h2&gt;Deckosaurus 0.3.8&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Transcripts keep their layout on Macs with always-visible scroll bars.&lt;/strong&gt; With a mouse (no trackpad), or "Show scroll bars: Always", the transcript's scroll bar used to appear and disappear as a reply streamed in, and each time it did, tables and the turn's timestamp were laid out for a width the pane no longer had. The scroll bar's space is now kept, so the text no longer shifts. Trackpad Macs look exactly as before.&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <enclosure url="https://updates.deckosaurus.com/downloads/Deckosaurus-0.3.8-26.zip" length="14028154" type="application/octet-stream" sparkle:edSignature="70xSYHIp757gWaMuwCRL5mkb56IJ4NgDrW6nkbxq2VDqmPRYCYnsTrbqrvd2XwaS8HJbkwA2TVJVZXGGoAQdBQ==" />
+</item>
